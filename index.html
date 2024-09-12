@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Selectores CSS y especificidad</h1>
+        <section>
+            <h2>¿Qué son los selectores CSS?</h2>
+            <p>Los selectores CSS son una referencia a uno o varios elementos HTML. Se utilizan para aplicar estilos a elementos de un sitio web. Los selectores indican a qué partes del documento HTML se aplicarán las reglas de estilo definidas.</p>
+            <p>Existen distintos tipos de selectores CSS. Estos son algunos ejemplos:
+            </p>
+            <h2>Tipos de selectores CSS</h2>
+            <h3>Selector de etiqueta (elemento)</h3>
+            <p>Se utiliza para aplicar estilos a todas las etiquetas HTML de un tipo específico.</p>
+            <h3>Selector de clase</h3>
+            <p>Aplica estilos a los elementos que tienen una clase específica. Se denota con un punto (.) seguido del nombre de la clase</p>
+            <h3>Selector de ID</h3>
+            <p>Aplica estilos a elementos que tienen un ID específico. Se denota con el símbolo # seguido del nombre del ID.</p>
+            <h3>Selector de atributo</h3>
+            <p>Se utiliza para aplicar estilos a elementos que tienen un atributo específico o que cumplen ciertas condiciones en sus atributos.</p>
+            <h3>Selector de descendientes</h3>
+            <p>Aplica estilos a los elementos que son descendientes (hijos o más abajo en la jerarquía) de otro elemeneto.</p>
+            <h3>Selector de hijos directos</h3>
+            <p>Aplica estilos a los elementos que son hijos directos de un elemento.</p>
+            <h3>Selector universal</h3>
+            <p>Permite aplicar estilos a todos los elementos de la página. Se denota con el símbolo asterisco (*).</p>
+            <table>
+                <thead>
+                    <th>Tipo de selector</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Selector de etiqueta</td>
+                        <td>Aplica estilos a etiquetas HTML</td>
+                        <td>div</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de clase</td>
+                        <td>Aplica estilos a elementos de una clase específica</td>
+                        <td>.primary</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de ID</td>
+                        <td>Aplica estilos a un ID específico</td>
+                        <td>#main</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Especificidad</h2>
+            <p>La especificidad en CSS se refiere a la prioridad que tienen los selectores cuando múltiples reglas se aplican al mismo
+            elemento. Cuando dos o más reglas de estilo afectan a un mismo elemento, el navegador utiliza la especificidad para determinar
+            cuál de las reglas se aplicará. A mayor especificidad, mayor prioridad tendrá el selector.</p>
+            <h3>¿Cómo se calcula la especificidad</h3>
+            <p>La especificidad se calcula con un sistema de puntos basado en el tipo de selectores utilizados. Se organiza en cuatro
+            niveles, generalmente representados por el formato a, b, c, d:</p>
+            <ul>
+                <li>a: Representa los selectores de estilo en línea (style dentro del elemento HTML).</li>
+                <li>b: Representa los selectores de ID.</li>
+                <li>c: Representa los selectores de clase, atributos o pseudoclases.</li>
+                <li>d: Representa los selectores de etiquetas o pseudoelementos.</li>
+            </ul>
+            <p>Cuanto más alto sea el valor en cada columna, mayor será la especificidad del selector.</p>
+            <h3>El caso de "!important"</h3>
+        </section>
+    </main>
+</body>
+</html>
